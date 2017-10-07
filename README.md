@@ -75,3 +75,8 @@ def post_tone():
 	from IPython import embed; embed() #COOL DEBUGGING TECHNIQUE
 	return render_template("tone.html")
   ```
+  
+  9. Run `> python main.py` and in debugger mode, type `> d` to view results of Tone Analyzer
+  
+  
+  Lesson summarized by Celine Yan
