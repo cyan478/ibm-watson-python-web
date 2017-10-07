@@ -7,6 +7,7 @@ How to Create a Simple Running Flask App with IBM Watson Features
 Prerequesites: 
 - Python vers. 2.7 or 3.6
 - `pip install Flask`
+- `pip install IPython` (for debugging purposes)
 
 1. Create a simple `main.py` Flask file 
 ```
