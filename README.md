@@ -60,3 +60,18 @@ watson-developer-cloud==0.25.2
 
 7. In the terminal, `> cf push`
 
+8. Go back to `main.py` and insert IBM Watson Tone Analyzer as a POST request
+
+```
+@app.route('/tone', methods=["POST"]) #POST of tone
+def post_tone():
+	u = <YOUR-USERNAME>
+	p = <YOUR-PASSWORD>
+	v = "2016-05-19"
+	text = request.values['tone'] #from dictionary, textarea name = tone, pull out input words
+	t = ToneAnalyzerV3(username=u, password=p, version=v)
+	d = t.tone(text)
+	
+	from IPython import embed; embed() #COOL DEBUGGING TECHNIQUE
+	return render_template("tone.html")
+  ```
