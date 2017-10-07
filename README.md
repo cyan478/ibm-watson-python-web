@@ -33,7 +33,7 @@ app.run(host='0.0.0.0', port=3333, debug=True)
 
 3. Download correct CloudFoundry (cf) CLI package at https://github.com/cloudfoundry/cli/releases
 
-4. Create a `manifest.yaml` file
+4. Create a `manifest.yml` file
 
 ```
 applications:
